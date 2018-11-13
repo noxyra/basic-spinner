@@ -1,0 +1,21 @@
+{
+    "name": "noxyra/basic-spinner",
+    "description": "Basic content spinner to integrate in PHP App",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Noxyra",
+            "email": "noxyra@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Noxyra\\BasicSpinner\\": "src/"
+        }
+    }
+}
