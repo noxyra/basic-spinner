@@ -2,7 +2,7 @@
     "name": "noxyra/basic-spinner",
     "description": "Basic content spinner to integrate in PHP App",
     "type": "library",
-    "license": "GNU",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Noxyra",
