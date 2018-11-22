@@ -93,9 +93,17 @@ abstract class Spinner
         foreach ($this->arrayMicroMasterSpin as $matchString) {
             $matchArray = explode('|', $matchString);
             foreach ($matchArray as $matchWord) {
-                $text = str_replace($matchWord, '{' . $matchString . '}', $text);
+                $old = $text;
+
+                $text = str_replace(" " . $matchWord . " ", ' {' . $matchString . '} ', $text);
+
+                if ($text !== $old) {
+                    break;
+                }
             }
+
         }
+
         return $text;
     }
 }
