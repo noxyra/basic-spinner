@@ -76,7 +76,7 @@ abstract class Spinner
     public static function replaceVars(string $text, $vars = [])
     {
         foreach ($vars as $varName => $varValue) {
-            str_replace('$' . $varName . '$', $varValue, $text);
+            $text = str_replace('$' . $varName . '$', $varValue, $text);
         }
 
         return $text;
